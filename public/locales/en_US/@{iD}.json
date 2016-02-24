@@ -1,0 +1,15 @@
+{
+  "name": "@{nbbpm.name}",
+  "version": "@{>version}",
+  "tabs.sets": "Set definition",
+  "tabs.help": "Help",
+  "settings": "Set definition",
+  "settings.set.id": "Set ID",
+  "settings.set.name": "Set name",
+  "settings.set.description": "Set description",
+  "settings.set.index": "Path to index file (relative to NodeBB root)",
+  "settings.set.attribution": "Attribution (HTML, optional)",
+  "settings.set.license": "License (optional)",
+  "settings.set.styles.main": "Custom CSS",
+  "settings.set.styles.email": "Custom CSS for emails"
+}

@@ -1,0 +1,39 @@
+// misc
+
+a[href^='http://'], a[href^='https://'], a[href^='//'] {
+  &:after {
+    .fa-icon();
+    margin-left: 2px;
+    content: @fa-var-external-link;
+    font-size: 0.8rem;
+    vertical-align: 60%;
+  }
+}
+
+@external-link-icon-color: #193242;
+@fa-var-external-link: "\f08e";
+
+.fa-icon() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// sets form
+
+.editor-wrapper {
+  min-height: 14px * 6 + 2px; // 14px editor line-height, 6 lines, 2px border (top + bottom)
+  position: relative;
+  border: 1px solid fade(black, 25%);
+
+  > .set-editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

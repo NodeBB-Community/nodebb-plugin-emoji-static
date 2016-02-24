@@ -1,0 +1,15 @@
+{
+  "id": "@{name}",
+  "version": "@{>version}",
+  "name": "@{nbbpm.name}",
+  "description": "@{description}",
+  "library": "@{main}",
+  "staticDirs": {"static": "public/static/"},
+  "languages": "public/locales",
+  "defaultLang": "en_US",
+  "templates": "public/templates",
+  "hooks": [
+    {"hook": "static:app.load", "method": "init"},
+    {"hook": "filter:admin.header.build", "method": "adminMenu"}
+  ]
+}

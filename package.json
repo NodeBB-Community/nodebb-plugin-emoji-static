@@ -1,0 +1,37 @@
+{
+  "name": "nodebb-plugin-emoji-static",
+  "version": "0.1.0+@{build}",
+  "description": "The static images emoji-plugin for NodeBB (requires nodebb-plugin-emoji-extended)",
+  "main": "lib/controller.js",
+  "author": "Ole Reglitzki <frissdiegurke@protonmail.com> (https://github.com/frissdiegurke)",
+  "contributors": [
+    "Ole Reglitzki <frissdiegurke@protonmail.com> (https://github.com/frissdiegurke)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB-Community/@{name}.git"
+  },
+  "nbbpm": {
+    "id": "@{id}",
+    "name": "Emoji Static",
+    "type": "@{type.name}",
+    "compatibility": "^1.0.0"
+  },
+  "keywords": [
+    "nodebb",
+    "@{type.name}",
+    "emoji-static"
+  ],
+  "dependencies": {
+    "glob": "^6.0.4",
+    "image-size": "^0.4.0",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1",
+    "uuid": "^2.0.1",
+    "wrench": "^1.5.8"
+  },
+  "peerDependencies": {
+    "emoji-extended": "^1.0.0"
+  }
+}
