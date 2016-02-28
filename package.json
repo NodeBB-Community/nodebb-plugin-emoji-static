@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-emoji-static",
-  "version": "1.0.1+@{build}",
+  "version": "1.0.2+@{build}",
   "description": "The static images emoji-plugin for NodeBB (requires nodebb-plugin-emoji-extended)",
   "main": "lib/controller.js",
   "author": "Ole Reglitzki <frissdiegurke@protonmail.com> (https://github.com/frissdiegurke)",
@@ -24,14 +24,17 @@
     "emoji-static"
   ],
   "dependencies": {
-    "glob": "^6.0.4",
+    "glob": "^7.0.0",
     "image-size": "^0.4.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.5.1",
     "q": "^1.4.1",
+    "semver": "^5.1.0",
     "uuid": "^2.0.1",
     "wrench": "^1.5.8"
   },
   "peerDependencies": {
-    "nodebb-plugin-emoji-extended": "^1.0.0"
+    "nodebb-plugin-emoji-extended": "^1.0.2",
+    "nconf": "*",
+    "winston": "*"
   }
 }
